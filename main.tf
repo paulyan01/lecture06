@@ -33,11 +33,15 @@ resource "null_resource" "null_resource_simple" {
 
     id = aws_instance.ec2_example.id    # to execute it every time replace - id = time()
 
-  }
+   }
 
   provisioner "local-exec" {
 
-    command = "echo Hello World"
+    command = <<-EOT
+
+      touch hello-world.txt
+
+    EOT
 
   }
 
