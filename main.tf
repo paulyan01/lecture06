@@ -16,7 +16,7 @@ resource "aws_instance" "ec2_example" {
 
   tags = {
 
-    Name = "Terraform EC2 "
+    Name = "Montreal Collage Paul Yan "
 
   }
 
